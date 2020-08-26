@@ -1,5 +1,5 @@
 #!/bin/sh
-geth -datadir ~/data/ init /workspace/genesis.json
+geth -datadir /data/ init /data/genesis.json
 
 if [  $# -lt 1 ]; then 
   exec "/bin/sh"
