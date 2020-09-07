@@ -29,10 +29,6 @@ services:
   myEthNode:
     image: zfq17876911936/chaojigongshi-ethereum-client-go:1.0
     container_name: myEthNode
-    entrypoint: /data/init.sh
-    command: /data/mine.sh
-    volumes:
-      - ./data:/data
     networks:
       - ethnet
     restart: on-failure
