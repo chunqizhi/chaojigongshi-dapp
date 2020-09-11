@@ -10,9 +10,7 @@
 	"chaoJiGongShiSubsidyHalvingInterval": 210000,
 	"chaoJiGongShiSubsidyHalvingFrequency": 0.5
     },
-  "alloc"      : {
-    "Gs1E5WpXGiAFzvressEnKvvivT7qPiSpF7hN": { "balance": "21000000000000000000000000" }
-  },
+  "alloc"      : {},
   "difficulty" : "0x400000",
   "extraData"  : "",
   "gasLimit"   : "0x7A1200",

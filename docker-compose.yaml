@@ -29,7 +29,7 @@ services:
     restart: on-failure
 
   myEthNode:
-    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0-10
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0-test
     container_name: myEthNode
     ports:
       - "30303:30303/tcp"
