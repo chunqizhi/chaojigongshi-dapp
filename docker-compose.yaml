@@ -4,6 +4,8 @@ services:
   myMysqlNode:
     image: zfq17876911936/chaojigongshi-mysql
     container_name: myMysqlNode
+    ports:
+      - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
     networks:
@@ -18,7 +20,7 @@ services:
     restart: on-failure
 
   myNode:
-    image: zfq17876911936/chaojigongshi-node:1.0
+    image: zfq17876911936/chaojigongshi-node:fdg-1.0
     container_name: myNode
     volumes:
       - ./nodeConf:/conf
@@ -29,7 +31,7 @@ services:
     restart: on-failure
 
   myEthNode:
-    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0-test
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:fdg-1.0
     container_name: myEthNode
     ports:
       - "30303:30303/tcp"
