@@ -31,9 +31,14 @@ services:
     restart: on-failure
 
   myEthNode:
+    # 生产环境使用
     image: zfq17876911936/chaojigongshi-ethereum-client-go:fdg-1.0
+    # 测试环境使用
+    #image: zfq17876911936/chaojigongshi-ethereum-client-go:fdg-1.0-ubuntu
     container_name: myEthNode
     volumes:
+      - ./genesis:/genesis
+      # 生产环境使用
       - ./data:/data
     ports:
       - "30301:30303/tcp"
