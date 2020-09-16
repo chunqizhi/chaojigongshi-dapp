@@ -15,12 +15,14 @@ services:
   myRedisNode:
     image: redis
     container_name: myRedisNode
+    ports:
+      - "6379:6379"
     networks:
       - ethnet
     restart: on-failure
 
   myNode:
-    image: zfq17876911936/chaojigongshi-node:fdg-1.0
+    image: zfq17876911936/chaojigongshi-node:fdg-1.0-refactor
     container_name: myNode
     volumes:
       - ./nodeConf:/conf
@@ -32,7 +34,7 @@ services:
 
   myEthNode:
     # 生产环境使用
-    image: zfq17876911936/chaojigongshi-ethereum-client-go:fdg-1.0
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:fdg-1.0-refactor
     # 测试环境使用
     #image: zfq17876911936/chaojigongshi-ethereum-client-go:fdg-1.0-ubuntu
     container_name: myEthNode

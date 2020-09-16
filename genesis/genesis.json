@@ -1,19 +1,15 @@
 {
   "config": {
-        "chainId": 4857,
+        "chainId": 4858,
         "homesteadBlock": 0,
         "eip150Block": 0,
         "eip155Block": 0,
         "eip158Block": 0,
 	"byzantiumBlock": 0,
-	"constantinopleBlock": 0,
-	"chaoJiGongShiSubsidyHalvingInterval": 210000,
-	"chaoJiGongShiSubsidyHalvingFrequency": 0.6
+	"constantinopleBlock": 0
     },
-  "alloc"      : {
-    "Gs2B2a5067f4dC2981D4339bd839dcD73ef97a892A": { "balance": "21000000000000000000000000" }
-  },
-  "difficulty" : "0x400",
+  "alloc"      : {},
+  "difficulty" : "0x400000",
   "extraData"  : "",
   "gasLimit"   : "0x7A1200",
   "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
