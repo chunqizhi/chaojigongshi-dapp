@@ -42,6 +42,7 @@ services:
       - ./genesis:/genesis
       # 生产环境使用
       - ./data:/data
+      - ./command:/usr/local/bin
     ports:
       - "30301:30303/tcp"
       - "30301:30303/udp"
