@@ -44,8 +44,8 @@ services:
       - ./data:/data
       - ./command:/usr/local/bin
     ports:
-      - "30301:30303/tcp"
-      - "30301:30303/udp"
+      - "30303:30303/tcp"
+      - "30303:30303/udp"
       - "18545:8545"
       - "18546:8546"
     networks:
