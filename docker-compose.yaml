@@ -22,7 +22,7 @@ services:
     restart: on-failure
 
   myNode:
-    image: zfq17876911936/chaojigongshi-node:fdg-1.0-refactor
+    image: zfq17876911936/chaojigongshi-node:fdg-1.0-refactor-922
     container_name: myNode
     volumes:
       - ./nodeConf:/conf
