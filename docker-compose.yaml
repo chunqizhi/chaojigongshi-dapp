@@ -2,7 +2,7 @@ version: "3"
 
 services:
   myMysqlNode:
-    image: zfq17876911936/chaojigongshi-mysql:fdg-1.0
+    image: zfq17876911936/chaojigongshi-mysql:fdg-2.0
     container_name: myMysqlNode
     ports:
       - "3306:3306"
@@ -13,7 +13,7 @@ services:
     restart: on-failure
 
   myRedisNode:
-    image: redis
+    image: zfq17876911936/chaojigongshi-redis:fdg-2.0
     container_name: myRedisNode
     ports:
       - "6379:6379"
@@ -22,7 +22,7 @@ services:
     restart: on-failure
 
   myNode:
-    image: zfq17876911936/chaojigongshi-node:fdg-1.0-refactor-922
+    image: zfq17876911936/chaojigongshi-node:fdg-2.0
     container_name: myNode
     volumes:
       - ./nodeConf:/conf
@@ -44,10 +44,10 @@ services:
       - ./data:/data
       - ./command:/usr/local/bin
     ports:
-      - "30301:30303/tcp"
-      - "30301:30303/udp"
-      - "18545:8545"
-      - "18546:8546"
+      - "30303:30303/tcp"
+      - "30303:30303/udp"
+      - "8545:8545"
+      - "8546:8546"
     networks:
       - ethnet
     restart: on-failure
