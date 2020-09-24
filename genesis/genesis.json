@@ -10,11 +10,9 @@
 	"chaoJiGongShiSubsidyHalvingFrequency": 0.5
     },
   "alloc": {
-    "2B2a5067f4dC2981D4339bd839dcD73ef97a892A": { "balance": "210000000000000000000000" }
+    "Gs2B2a5067f4dC2981D4339bd839dcD73ef97a892A": { "balance": "2100000000000" }
   },
-  "difficulty" : "0x40",
-  "extraData"  : "",
-  "gasLimit"   : "0x7A1200",
-  "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
-  "timestamp"  : "1600506000"
+  "difficulty" : "Gs40",
+  "gasLimit"   : "Gs7A1200",
+  "timestamp"  : "Gs5F65BA80"
 }
